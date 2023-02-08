@@ -10,7 +10,25 @@ import Navbar from "./component/Navbar.jsx"
 function App() {
 
   return (
-    <div></div>
+      <Router>
+        <Navbar>
+          <Routes>
+            <Route exact path="/">
+              {<Home/>}
+            </Route>
+            <Route path="/about">
+              {<About/>}
+            </Route>
+            <Route path="/reception/:id">
+              {<SingleReception/>}
+            </Route>
+            <Route path="*">
+              {<Error/>}
+            </Route>
+          </Routes>
+        </Navbar>
+
+      </Router>
   )
 
 }
