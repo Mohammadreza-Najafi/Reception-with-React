@@ -17,6 +17,7 @@ const ReceptionList=() => {
             </h2>
         )
     }
+    // console.log(receptions)
 
     return(
         <section className="section">
